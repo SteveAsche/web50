@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+    <style>
+        body,html{height:100%;margin:0;padding:0; font-family: Arial, Helvetica, sans-serif;}
+        #viewport{min-height:100%;position:relative;width:100%}
+
+        .searchbox{
+
+        /*border: solid 1px; */
+        
+        padding-left: 2%;
+        border-radius: 20px;
+        height: 30px;
+        width: 35%;
+        outline-style:none;
+        box-shadow: none;
+        border-color: black;
+        background-color:white;
+        margin-left: 32%;
+        margin-right: 33%;
+
+        }
+
+        .searchbox:hover {
+        box-shadow: 0 0 2px 2px #cacaca;
+
+        }
+    </style>
     <head>
         <title>Search</title>
     </head>
     <body>
         <form action="https://www.google.com/search">
-            <input type="text" name="q">
+            <input class="searchbox" type="text" name="q">
             <input type="submit" value="Google Search">
         </form>
     </body>
