@@ -1,1 +1,33 @@
 <!-- Sub page for the image search -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="searchstyle.css">
+        <title>Image Search</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <ul class="navbar-links">
+                <li><a href="index.html">Google Search</a></li>
+
+            
+            </ul> 
+        </nav>
+        <div class="container">
+            <div class="centered-container">
+                <form action="https://www.google.com/search">
+
+                        <input class="searchbox" id="search" type="text" name="q" placeholder="Search Google" required>
+                        <input type="hidden" id="sclient" name="sclient" value="img">
+                        <input type="hidden" id="udm" name="udm" value="2">
+                        <input id="search-button" type="submit" value="Image Search">
+
+                
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
