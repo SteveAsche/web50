@@ -3,6 +3,7 @@ body,html{
     margin:0;
     padding:0; 
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
     display:block;
     flex-direction: column;
 
@@ -23,7 +24,7 @@ body,html{
     align-items: center;
     height: 100%;
     width: 100%;
-    
+
 
 }
 
@@ -41,7 +42,8 @@ body,html{
     display: flex;
     justify-content: right;
     align-items: center;
-    background-color: aqua;
+    background-color:#fff;
+    color: black;
     padding: 1rem;
 
 }
@@ -61,16 +63,19 @@ body,html{
 
 .navbar-links a {
     text-decoration: none;
+    color: black;
 }
 
 #aformid {
     margin:auto;
 }
 
-form {
+
+
+.asearchform {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .centered-container {
@@ -96,12 +101,19 @@ input[type="text"] {
     width: 350px;
 }
 
+.input-div {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
 .searchbox{
 
     /*border: solid 1px; */
 
     
     border-radius: 20px;
+    padding-left: 1em;
     height: 30px;
     width: 100%;
     outline-style:none;
@@ -121,11 +133,12 @@ input[type="text"] {
     height: 30px;
     width: 100%;
     margin: 2px;
+    padding-left: 1em;
     outline-style:none;
     box-shadow: none;
     border-color: black;
     background-color:white;
-    text-align: center;
+    text-align: left;
     
 
 }
@@ -153,5 +166,7 @@ input[type="text"] {
     margin-top: 15px;
     padding-top: 3px;
     align-self: center;
-
+    background-color: #4d90fe;
+    color: #fff;
+    border: 1px solid #3079ed;
 }
